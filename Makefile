@@ -50,7 +50,7 @@ container-all:
 		--env CFLAGS="-fdebug-prefix-map=/ebpf=." \
 		--env HOME="/tmp" \
 		"${IMAGE}:${VERSION}" \
-		$(MAKE) all
+		/usr/bin/make all
 
 # (debug) Drop the user into a shell inside the container as root.
 container-shell:
